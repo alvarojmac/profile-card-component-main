@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkCyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-size: contain;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    margin: 2rem 1rem;
+    height: 380px;
+}
+
+figure.card {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+figure.card img {
+    display: block;
+}
+
+figure.alvaro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+}
+
+article.name-age {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+article.name-age > h1 {
+    font-size: 18px;
+    margin: 10px 10px 5px 0 ;
+}
+
+article.name-age > p {
+    color: var(--darkGray);
+    
+}
+
+article.localization {
+    color: var(--darkGray);
+    font-size: 16px;
+}
+
+hr {
+    border-style: ridge;
+    color: var(--darkGray);
+    margin: 30px 0 20px 0;
+
+}
+
+article.status {
+    display: flex;
+    justify-content: center;
+}
+
+article.status > div {
+    margin: 5px 20px;
+}
+
+article.status .numbers {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+article.status .text {
+    font-size: 12px;
+    color: var(--darkGray);
+    letter-spacing: 2px;
+}
